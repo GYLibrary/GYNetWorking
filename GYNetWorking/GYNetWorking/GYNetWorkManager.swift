@@ -8,6 +8,9 @@
 
 import Foundation
 
+public typealias Success = (_ data:Data? , _ response:URLResponse?) -> Void
+public typealias Failure = (_ error:Error?) -> Void
+
 class GYNetWorkManager {
     
     let method: GYNetWorkMethod!
@@ -18,6 +21,8 @@ class GYNetWorkManager {
     let session = URLSession.shared
     var task: URLSessionDataTask!
     
+    /// 服务器请求超时时间设置
+    var timeOut: TimeInterval = 10
     init(url:String!, method: GYNetWorkMethod,params: [String: Any]?,callBack:@escaping RequestCompletion)
     {
         self.url = url
@@ -25,6 +30,7 @@ class GYNetWorkManager {
         self.params = params
         self.callBack = callBack
         self.request = URLRequest.init(url: URL(string: url)!)
+        self.request.timeoutInterval = timeOut
         
     }
     
@@ -32,6 +38,7 @@ class GYNetWorkManager {
     func buildRequest() {
         if self.method == .GET && self.params != nil {
             self.request = URLRequest.init(url: URL(string: self.url + "?" + GYParameterEncoding.convertSimpleParams(self.params))!)
+            self.request.timeoutInterval = timeOut
         }
         request.httpMethod = self.method.rawValue
         
@@ -50,7 +57,10 @@ class GYNetWorkManager {
     func fireTask() {
         
         task = session.dataTask(with: self.request, completionHandler: { (data, response, error) in
+            
             self.callBack(data, response, error)
+            
+            
         })
         task.resume()
     }

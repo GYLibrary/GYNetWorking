@@ -21,14 +21,28 @@ public enum GYNetWorkMethod: String {
     case POST = "POST"
 }
 
+
+/// 网络请求结果
+///
+/// - Success:  Success description
+/// - Failure:  Failure description
+/// - OverTime: OverTime description
+public enum GYNetWorState: Int {
+    case Success
+    case Failure
+    case OverTime
+    
+}
+
 public class GYNetWork{
 
     
     public class func request() {
         
         let session = URLSession.shared
-        let request = URLRequest(url: URL(string:"http://baidu.com")!)
-        
+        var request = URLRequest(url: URL(string:"http://baidu.com")!)
+        //超时时间设置
+        request.timeoutInterval = 0.1
         let task = session.dataTask(with: request) { (data, response, error) in
             
             print("waif for 5 seconds!")
@@ -148,6 +162,7 @@ public class GYNetWork{
         if method == .POST {
             request.addValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
             request.httpBody = params.data(using: String.Encoding(rawValue: String.Encoding.utf8.rawValue))
+            
         }
         
         let task = session.dataTask(with: request) { (data, response, error) in
