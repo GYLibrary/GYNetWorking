@@ -16,6 +16,8 @@
 		B75214B61DC0494600AB863F /* GYNetWorkINGUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75214B51DC0494600AB863F /* GYNetWorkINGUITests.swift */; };
 		B75214C41DC049FF00AB863F /* GYNetWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75214C31DC049FF00AB863F /* GYNetWork.swift */; };
 		B75214C71DC079B600AB863F /* GYParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75214C61DC079B600AB863F /* GYParameterEncoding.swift */; };
+		B7E1589A1DC095510059D230 /* GYNetWorkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E158991DC095510059D230 /* GYNetWorkManager.swift */; };
+		B7E1589C1DC09DA70059D230 /* NetWorkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E1589B1DC09DA70059D230 /* NetWorkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		B75214B71DC0494600AB863F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B75214C31DC049FF00AB863F /* GYNetWork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYNetWork.swift; sourceTree = "<group>"; };
 		B75214C61DC079B600AB863F /* GYParameterEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYParameterEncoding.swift; sourceTree = "<group>"; };
+		B7E158991DC095510059D230 /* GYNetWorkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYNetWorkManager.swift; sourceTree = "<group>"; };
+		B7E1589B1DC09DA70059D230 /* NetWorkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetWorkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +107,9 @@
 			children = (
 				B75214951DC0494600AB863F /* AppDelegate.swift */,
 				B75214971DC0494600AB863F /* ViewController.swift */,
+				B7E1589B1DC09DA70059D230 /* NetWorkManager.swift */,
 				B75214C31DC049FF00AB863F /* GYNetWork.swift */,
+				B7E158991DC095510059D230 /* GYNetWorkManager.swift */,
 				B75214C61DC079B600AB863F /* GYParameterEncoding.swift */,
 				B75214991DC0494600AB863F /* Main.storyboard */,
 				B752149C1DC0494600AB863F /* Assets.xcassets */,
@@ -270,8 +276,10 @@
 			files = (
 				B75214C71DC079B600AB863F /* GYParameterEncoding.swift in Sources */,
 				B75214C41DC049FF00AB863F /* GYNetWork.swift in Sources */,
+				B7E1589C1DC09DA70059D230 /* NetWorkManager.swift in Sources */,
 				B75214981DC0494600AB863F /* ViewController.swift in Sources */,
 				B75214961DC0494600AB863F /* AppDelegate.swift in Sources */,
+				B7E1589A1DC095510059D230 /* GYNetWorkManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -522,6 +530,7 @@
 				B75214BC1DC0494600AB863F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B75214BD1DC0494600AB863F /* Build configuration list for PBXNativeTarget "GYNetWorkINGTests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +539,7 @@
 				B75214BF1DC0494600AB863F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B75214C01DC0494600AB863F /* Build configuration list for PBXNativeTarget "GYNetWorkINGUITests" */ = {
 			isa = XCConfigurationList;
@@ -538,6 +548,7 @@
 				B75214C21DC0494600AB863F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

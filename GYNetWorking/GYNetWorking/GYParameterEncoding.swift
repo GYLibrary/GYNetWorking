@@ -12,6 +12,28 @@ open class GYParameterEncoding {
     
     //MARK: - 转化参数为String
     
+    class func convertSimpleParams(_ parameters:[String: Any]?) -> String {
+        
+        var i = 0
+        var address:String = ""
+        
+        if let paras = parameters {
+            
+            for (key,value) in paras {
+                
+                if i == 0 {
+                    address += "\(key)=\(value)"
+                } else {
+                    address += "&\(key)=\(value)"
+                }
+                i += 1
+                
+            }
+            
+        }
+        return address
+    }
+    
     /// 转化参数为String
     ///
     /// - parameter parameters:
