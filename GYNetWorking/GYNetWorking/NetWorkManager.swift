@@ -8,6 +8,16 @@
 
 import Foundation
 
+
+@discardableResult
+
+public func request(_ method: GYNetWorkMethod,url: String!,params:[String: Any],callBack:@escaping RequestCompletion) {
+    
+    let manager = GYNetWorkManager(url: url, method: method, params: params, callBack: callBack)
+    manager.startFire()
+    
+}
+
 class NetWorkManager {
 
     

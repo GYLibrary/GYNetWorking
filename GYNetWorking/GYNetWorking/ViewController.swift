@@ -37,6 +37,7 @@ class ViewController: UIViewController {
 //            print(NSString(data: data!, encoding: String.Encoding.utf8.rawValue))
             
         }
+        
 //
 //        GYNetWork.request(method: GYNetWorkMethod.GET, url: "http://wechat.hoyofuwu.com/FamilyAccount/AppLogin", params: ["phone":"15221981520","password":"666666"]) { (data, response, error) in
 //            print(NSString(data: data!, encoding: String.Encoding.utf8.rawValue))
@@ -46,34 +47,34 @@ class ViewController: UIViewController {
 //        NetWorkManager.GET(url: "http://baidu.com", callBack: { (data, response, error) in
 //            
 //            }
-        NetWorkManager.GET(url: "http://pitayaswift.sinaapp.com/pitaya.php") { (data, response, error) in
-            
-            if data != nil {
-                 print(NSString(data: data!, encoding: String.Encoding.utf8.rawValue))
-            }
-            if response != nil {
-                print(response)
-            }
-            if error != nil {
-                print(error)
-            }
-            
-        }
-        
-        NetWorkManager.POST(url: "http://wechat.hoyofuwu.com/FamilyAccount/AppLogin", params: ["phone":"15221981520","password":"666666"]) { (data, response, error) in
-            if data != nil {
-                print(NSString(data: data!, encoding: String.Encoding.utf8.rawValue))
-            }
-            if response != nil {
-                //服务器相关信息
-                print(response)
-            }
-            if error != nil {
-                //错误描述
-                print(error)
-            }
-        }
+//        NetWorkManager.GET(url: "http://pitayaswift.sinaapp.com/pitaya.php") { (data, response, error) in
+//            
+//            if data != nil {
+//                 print(NSString(data: data!, encoding: String.Encoding.utf8.rawValue))
+//            }
+//            if response != nil {
+//                print(response)
+//            }
+//            if error != nil {
+//                print(error)
+//            }
+//            
+//        }
 //        
+//        NetWorkManager.POST(url: "http://wechat.hoyofuwu.com/FamilyAccount/AppLogin", params: ["phone":"15221981520","password":"666666"]) { (data, response, error) in
+//            if data != nil {
+//                print(NSString(data: data!, encoding: String.Encoding.utf8.rawValue))
+//            }
+//            if response != nil {
+//                //服务器相关信息
+//                print(response)
+//            }
+//            if error != nil {
+//                //错误描述
+//                print(error)
+//            }
+//        }
+//
 //        NetWorkManager.POST(url: "http://m.geeboo.com/selection/cGetArticleList.go", params: ["phone":"111","password":"666666"]) { (data, response, error) in
 //            if data != nil {
 //                print(NSString(data: data!, encoding: String.Encoding.utf8.rawValue))
@@ -87,7 +88,22 @@ class ViewController: UIViewController {
 //                print(error)
 //            }
 //        }
-        
+        request(GYNetWorkMethod.GET, url: "http://wechat.hoyofuwu.com/FamilyAccount/AppLogin", params: ["phone":"15221981520","password":"666666"]) { (data, response, error) in
+            
+                            if data != nil {
+                                print(NSString(data: data!, encoding: String.Encoding.utf8.rawValue))
+                            }
+                            if response != nil {
+                                //服务器相关信息
+                                print(response)
+                            }
+                            if error != nil {
+                                //错误描述
+                                print(error)
+                            }
+
+            
+        }
         print("猪猪最帅")
     }
 

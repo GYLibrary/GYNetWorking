@@ -34,6 +34,13 @@ public enum GYNetWorState: Int {
     
 }
 
+// MARK: - Data Request
+
+@discardableResult
+public func request(str:String) {
+    return GYNetWork.request()
+}
+
 public class GYNetWork{
 
     
