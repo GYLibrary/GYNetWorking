@@ -11,7 +11,7 @@ import Foundation
 //消除未使用返回值的警告
 //@discardableResult
 
-/// 通用方法(返回data,response,error)
+/// 通用方法(返回NSData,response,error)
 ///
 /// - parameter method:   method description
 /// - parameter url:      url description
