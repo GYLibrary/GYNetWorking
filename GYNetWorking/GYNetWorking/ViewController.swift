@@ -91,7 +91,15 @@ class ViewController: UIViewController {
         request(GYNetWorkMethod.GET, url: "http://wechat.hoyofuwu.com/FamilyAccount/AppLogin", params: nil) { (data, response, error) in
             
                             if data != nil {
-                                print(NSString(data: data!, encoding: String.Encoding.utf8.rawValue))
+//                                print(NSString(data: data!, encoding: String.Encoding.utf8.rawValue))
+                                
+                                do {
+                                    let json = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.allowFragments) as? NSDictionary
+                                    print(json)
+                                    print(json?["state"])
+                                } catch {
+                                    
+                                }
                             }
                             if response != nil {
                                 //服务器相关信息

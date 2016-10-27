@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B73A09ED1DC1A8F800ADD1F1 /* GYResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73A09EC1DC1A8F800ADD1F1 /* GYResult.swift */; };
 		B75214961DC0494600AB863F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75214951DC0494600AB863F /* AppDelegate.swift */; };
 		B75214981DC0494600AB863F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75214971DC0494600AB863F /* ViewController.swift */; };
 		B752149B1DC0494600AB863F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B75214991DC0494600AB863F /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 		B75214C71DC079B600AB863F /* GYParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75214C61DC079B600AB863F /* GYParameterEncoding.swift */; };
 		B7E1589A1DC095510059D230 /* GYNetWorkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E158991DC095510059D230 /* GYNetWorkManager.swift */; };
 		B7E1589C1DC09DA70059D230 /* NetWorkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E1589B1DC09DA70059D230 /* NetWorkManager.swift */; };
+		B7F423731DC1C00200E2D4E1 /* GYRespons.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F423721DC1C00200E2D4E1 /* GYRespons.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B73A09EC1DC1A8F800ADD1F1 /* GYResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYResult.swift; sourceTree = "<group>"; };
 		B75214921DC0494600AB863F /* GYNetWorkING.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GYNetWorkING.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B75214951DC0494600AB863F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B75214971DC0494600AB863F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +58,7 @@
 		B75214C61DC079B600AB863F /* GYParameterEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYParameterEncoding.swift; sourceTree = "<group>"; };
 		B7E158991DC095510059D230 /* GYNetWorkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYNetWorkManager.swift; sourceTree = "<group>"; };
 		B7E1589B1DC09DA70059D230 /* NetWorkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetWorkManager.swift; sourceTree = "<group>"; };
+		B7F423721DC1C00200E2D4E1 /* GYRespons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYRespons.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +115,8 @@
 				B75214C31DC049FF00AB863F /* GYNetWork.swift */,
 				B7E158991DC095510059D230 /* GYNetWorkManager.swift */,
 				B75214C61DC079B600AB863F /* GYParameterEncoding.swift */,
+				B73A09EC1DC1A8F800ADD1F1 /* GYResult.swift */,
+				B7F423721DC1C00200E2D4E1 /* GYRespons.swift */,
 				B75214991DC0494600AB863F /* Main.storyboard */,
 				B752149C1DC0494600AB863F /* Assets.xcassets */,
 				B752149E1DC0494600AB863F /* LaunchScreen.storyboard */,
@@ -278,6 +284,8 @@
 				B75214C41DC049FF00AB863F /* GYNetWork.swift in Sources */,
 				B7E1589C1DC09DA70059D230 /* NetWorkManager.swift in Sources */,
 				B75214981DC0494600AB863F /* ViewController.swift in Sources */,
+				B7F423731DC1C00200E2D4E1 /* GYRespons.swift in Sources */,
+				B73A09ED1DC1A8F800ADD1F1 /* GYResult.swift in Sources */,
 				B75214961DC0494600AB863F /* AppDelegate.swift in Sources */,
 				B7E1589A1DC095510059D230 /* GYNetWorkManager.swift in Sources */,
 			);
