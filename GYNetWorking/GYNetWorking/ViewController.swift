@@ -25,20 +25,20 @@ class ViewController: UIViewController {
 //            print(NSString(data: data! as Data, encoding: String.Encoding.utf8.rawValue))
 //        }
 
-        GYNetWork.request(method: GYNetWorkMethod.POST, url: "http://m.geeboo.com/selection/cGetArticleList.go", params: "articleType=0&nowPage=1&onePageCount=10&terminalType=4&versionNumber=373") { (data, response, error) in
-            do {
-                let json = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.allowFragments) as? NSDictionary
-                print(json)
-                print(json?["flag"])
-            } catch {
-                
-            }
-            
-//            print(NSString(data: data!, encoding: String.Encoding.utf8.rawValue))
-            
-        }
         
-//
+//        GYNetWork.request(method: GYNetWorkMethod.POST, url: "http://m.geeboo.com/selection/cGetArticleList.go", params: "articleType=0&nowPage=1&onePageCount=10&terminalType=4&versionNumber=373") { (data, response, error) in
+//            do {
+//                let json = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.allowFragments) as? NSDictionary
+//                print(json)
+//                print(json?["flag"])
+//            } catch {
+//                
+//            }
+//            print(NSString(data: data!, encoding: String.Encoding.utf8.rawValue))
+//        }
+        
+
+        
 //        GYNetWork.request(method: GYNetWorkMethod.GET, url: "http://wechat.hoyofuwu.com/FamilyAccount/AppLogin", params: ["phone":"15221981520","password":"666666"]) { (data, response, error) in
 //            print(NSString(data: data!, encoding: String.Encoding.utf8.rawValue))
 //
@@ -61,6 +61,7 @@ class ViewController: UIViewController {
 //            
 //        }
 //        
+        
 //        NetWorkManager.POST(url: "http://wechat.hoyofuwu.com/FamilyAccount/AppLogin", params: ["phone":"15221981520","password":"666666"]) { (data, response, error) in
 //            if data != nil {
 //                print(NSString(data: data!, encoding: String.Encoding.utf8.rawValue))
@@ -88,11 +89,11 @@ class ViewController: UIViewController {
 //                print(error)
 //            }
 //        }
+        
+        #if false
         request(GYNetWorkMethod.GET, url: "http://wechat.hoyofuwu.com/FamilyAccount/AppLogin", params: nil) { (data, response, error) in
             
                             if data != nil {
-//                                print(NSString(data: data!, encoding: String.Encoding.utf8.rawValue))
-                                
                                 do {
                                     let json = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.allowFragments) as? NSDictionary
                                     print(json)
@@ -110,7 +111,17 @@ class ViewController: UIViewController {
                                 print(error)
                             }
 
-            
+        }
+        #endif
+        
+        requestForJSONResult(GYNetWorkMethod.GET, url: "http://wechat.hoyofuwu.com/FamilyAccount/AppLogin", params: ["phone":"15221981520","password":"666666"]) { (result) in
+
+            switch result! {
+            case .sucess(let value):
+                print(value)
+            case .failure(let error):
+                print(error)
+            }
         }
         
         print("猪猪最帅")

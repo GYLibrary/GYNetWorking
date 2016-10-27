@@ -11,7 +11,7 @@ import Foundation
 //消除未使用返回值的警告
 //@discardableResult
 
-/// 通用方法
+/// 通用方法(返回data,response,error)
 ///
 /// - parameter method:   method description
 /// - parameter url:      url description
@@ -25,6 +25,19 @@ public func request(_ method: GYNetWorkMethod,url: String!,params:[String: Any]?
 }
 
 
+/// 通用方法(返回JSON -> GYResult)
+///
+/// - parameter method:     method description
+/// - parameter url:        url description
+/// - parameter params:     params description
+/// - parameter resultBack: resultBack description
+public func requestForJSONResult(_ method: GYNetWorkMethod,url: String!,params:[String: Any]?,resultBack:@escaping SuccessAndFailureResult) {
+    
+    let manager = GYNetWorkManager(url: url, method: method, params: params, resultBack: resultBack)
+    manager.resuluFire()
+    
+}
+
 /// 带参数的GET请求
 ///
 /// - parameter url:      url description
@@ -37,10 +50,8 @@ public func request(_ url: String!,params:[String: Any],callBack: @escaping Requ
 }
 
 
-
 class NetWorkManager {
 
-    
     /// 通用方法
     ///
     /// - parameter method:   method description
