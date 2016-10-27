@@ -52,7 +52,7 @@ public class GYNetWork{
         request.httpShouldHandleCookies = false
         let task = session.dataTask(with: request) { (data, response, error) in
             
-            print("waif for 5 seconds!")
+            print("稍等一下！")
             sleep(5)
             let string = NSString(data: data!, encoding: String.Encoding.utf8.rawValue)
             print(string)
