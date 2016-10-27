@@ -8,35 +8,6 @@
 
 import UIKit
 
-
-/// 请求结果回调
-public typealias RequestCompletion = (_ data:Data?, _ response:URLResponse?,_ error: Error?) -> Void
-//public typealias ResultSuccessAndError = (_ result: );) ->Void
-/// 请求方式
-///
-/// - GET:  GET
-/// - POST: POST
-public enum GYNetWorkMethod: String {
-    
-    case GET = "GET"
-    case POST = "POST"
-    
-}
-
-
-/// 网络请求结果
-///
-/// - Success:  Success description
-/// - Failure:  Failure description
-/// - OverTime: OverTime description
-public enum GYNetWorState {
-    case Success()
-    case Failure
-    case OverTime
-    
-}
-
-
 // MARK: - Data Request
 
 @discardableResult

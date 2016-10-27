@@ -8,10 +8,6 @@
 
 import Foundation
 
-public typealias Success = (_ data:Data? , _ response:URLResponse?) -> Void
-public typealias Failure = (_ error:Error?) -> Void
-
-public typealias SuccessAndFailureResult = (_ result:GYResult<Any>?) -> Void
 
 class GYNetWorkManager {
     

@@ -21,6 +21,7 @@
 		B7E1589C1DC09DA70059D230 /* NetWorkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E1589B1DC09DA70059D230 /* NetWorkManager.swift */; };
 		B7F423731DC1C00200E2D4E1 /* GYRespons.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F423721DC1C00200E2D4E1 /* GYRespons.swift */; };
 		B7F423801DC1CC5700E2D4E1 /* GYError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F4237F1DC1CC5700E2D4E1 /* GYError.swift */; };
+		B7F423821DC1E5EF00E2D4E1 /* GYNetConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F423811DC1E5EF00E2D4E1 /* GYNetConst.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		B7E1589B1DC09DA70059D230 /* NetWorkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetWorkManager.swift; sourceTree = "<group>"; };
 		B7F423721DC1C00200E2D4E1 /* GYRespons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYRespons.swift; sourceTree = "<group>"; };
 		B7F4237F1DC1CC5700E2D4E1 /* GYError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYError.swift; sourceTree = "<group>"; };
+		B7F423811DC1E5EF00E2D4E1 /* GYNetConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYNetConst.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,10 +118,11 @@
 				B7E1589B1DC09DA70059D230 /* NetWorkManager.swift */,
 				B75214C31DC049FF00AB863F /* GYNetWork.swift */,
 				B7E158991DC095510059D230 /* GYNetWorkManager.swift */,
-				B73A09EC1DC1A8F800ADD1F1 /* GYResult.swift */,
-				B7F4237F1DC1CC5700E2D4E1 /* GYError.swift */,
 				B7F423721DC1C00200E2D4E1 /* GYRespons.swift */,
 				B75214C61DC079B600AB863F /* GYParameterEncoding.swift */,
+				B73A09EC1DC1A8F800ADD1F1 /* GYResult.swift */,
+				B7F423811DC1E5EF00E2D4E1 /* GYNetConst.swift */,
+				B7F4237F1DC1CC5700E2D4E1 /* GYError.swift */,
 				B75214991DC0494600AB863F /* Main.storyboard */,
 				B752149C1DC0494600AB863F /* Assets.xcassets */,
 				B752149E1DC0494600AB863F /* LaunchScreen.storyboard */,
@@ -286,6 +289,7 @@
 				B75214C71DC079B600AB863F /* GYParameterEncoding.swift in Sources */,
 				B75214C41DC049FF00AB863F /* GYNetWork.swift in Sources */,
 				B7E1589C1DC09DA70059D230 /* NetWorkManager.swift in Sources */,
+				B7F423821DC1E5EF00E2D4E1 /* GYNetConst.swift in Sources */,
 				B75214981DC0494600AB863F /* ViewController.swift in Sources */,
 				B7F423731DC1C00200E2D4E1 /* GYRespons.swift in Sources */,
 				B73A09ED1DC1A8F800ADD1F1 /* GYResult.swift in Sources */,
