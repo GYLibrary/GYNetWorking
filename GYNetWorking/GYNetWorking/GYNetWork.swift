@@ -8,30 +8,11 @@
 
 import UIKit
 
+// MARK: - Data Request
 
-/// 请求结果回调
-public typealias RequestCompletion = (_ data:Data?, _ response:URLResponse?,_ error: Error?) -> Void
-/// 请求方式
-///
-/// - GET:  GET
-/// - POST: POST
-public enum GYNetWorkMethod: String {
-    
-    case GET = "GET"
-    case POST = "POST"
-}
-
-
-/// 网络请求结果
-///
-/// - Success:  Success description
-/// - Failure:  Failure description
-/// - OverTime: OverTime description
-public enum GYNetWorState: Int {
-    case Success
-    case Failure
-    case OverTime
-    
+@discardableResult
+public func request(str:String) {
+    return GYNetWork.request()
 }
 
 public class GYNetWork{

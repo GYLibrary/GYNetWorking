@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,9 +21,8 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EuN-eJ-1Mo">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="7jV-sJ-G22"/>
-                                    <constraint firstAttribute="width" constant="46" id="kzk-T9-nBK"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="帅猪猪"/>
                                 <connections>
                                     <action selector="startAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DM1-12-Oir"/>
                                 </connections>
@@ -32,8 +30,8 @@
                         </subviews>
                         <color key="backgroundColor" red="0.9491925336" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="EuN-eJ-1Mo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="hkt-ec-sAP"/>
-                            <constraint firstItem="EuN-eJ-1Mo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="lKc-t7-TYi"/>
+                            <constraint firstItem="EuN-eJ-1Mo" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="cy4-6V-lnd"/>
+                            <constraint firstItem="EuN-eJ-1Mo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zGR-HU-3iq"/>
                         </constraints>
                     </view>
                     <connections>
