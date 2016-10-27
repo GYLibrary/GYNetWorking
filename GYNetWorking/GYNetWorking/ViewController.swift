@@ -88,7 +88,7 @@ class ViewController: UIViewController {
 //                print(error)
 //            }
 //        }
-        request(GYNetWorkMethod.GET, url: "http://wechat.hoyofuwu.com/FamilyAccount/AppLogin", params: ["phone":"15221981520","password":"666666"]) { (data, response, error) in
+        request(GYNetWorkMethod.GET, url: "http://wechat.hoyofuwu.com/FamilyAccount/AppLogin", params: nil) { (data, response, error) in
             
                             if data != nil {
                                 print(NSString(data: data!, encoding: String.Encoding.utf8.rawValue))
@@ -104,6 +104,7 @@ class ViewController: UIViewController {
 
             
         }
+        
         print("猪猪最帅")
     }
 

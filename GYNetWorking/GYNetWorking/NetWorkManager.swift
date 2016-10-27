@@ -8,15 +8,35 @@
 
 import Foundation
 
+//消除未使用返回值的警告
+//@discardableResult
 
-@discardableResult
-
-public func request(_ method: GYNetWorkMethod,url: String!,params:[String: Any],callBack:@escaping RequestCompletion) {
+/// 通用方法
+///
+/// - parameter method:   method description
+/// - parameter url:      url description
+/// - parameter params:   params description
+/// - parameter callBack: callBack description
+public func request(_ method: GYNetWorkMethod,url: String!,params:[String: Any]?,callBack:@escaping RequestCompletion) {
     
     let manager = GYNetWorkManager(url: url, method: method, params: params, callBack: callBack)
     manager.startFire()
     
 }
+
+
+/// 带参数的GET请求
+///
+/// - parameter url:      url description
+/// - parameter params:   params description
+/// - parameter callBack: callBack description
+public func request(_ url: String!,params:[String: Any],callBack: @escaping RequestCompletion){
+    let manager = GYNetWorkManager(url: url, method: .GET, params: params, callBack: callBack)
+    manager.startFire()
+    
+}
+
+
 
 class NetWorkManager {
 
