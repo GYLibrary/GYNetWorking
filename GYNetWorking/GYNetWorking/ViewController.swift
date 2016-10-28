@@ -39,7 +39,7 @@ class ViewController: UIViewController {
         
 
         
-//        GYNetWork.request(method: GYNetWorkMethod.GET, url: "http://wechat.hoyofuwu.com/FamilyAccount/AppLogin", params: ["phone":"15221981520","password":"666666"]) { (data, response, error) in
+//        GYNetWork.request(method: GYNetWorkMethod.GET, url: "www.baidu.com", params: ["phone":"XXX","password":"666666"]) { (data, response, error) in
 //            print(NSString(data: data!, encoding: String.Encoding.utf8.rawValue))
 //
 //        }
@@ -91,7 +91,7 @@ class ViewController: UIViewController {
 //        }
         
         #if false
-        request(GYNetWorkMethod.GET, url: "http://wechat.hoyofuwu.com/FamilyAccount/AppLogin", params: nil) { (data, response, error) in
+        request(GYNetWorkMethod.GET, url: "http://m.geeboo.com/selection/cGetArticleList.g", params: nil) { (data, response, error) in
             
                             if data != nil {
                                 do {
@@ -114,7 +114,7 @@ class ViewController: UIViewController {
         }
         #endif
         
-        requestForJSONResult(GYNetWorkMethod.GET, url: "http://wechat.hoyofuwu.com/FamilyAccount/AppLogin", params: ["phone":"15221981520","password":"666666"]) { (result) in
+        requestForJSONResult(GYNetWorkMethod.GET, url: "http://m.geeboo.com/selection/cGetArticleList.g", params: ["phone":"XXXX","password":"666666"]) { (result) in
 
             switch result! {
             case .sucess(let value):
