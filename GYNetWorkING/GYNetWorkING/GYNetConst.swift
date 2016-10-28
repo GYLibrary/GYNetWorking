@@ -27,7 +27,8 @@ public enum GYNetWorkMethod: String {
     
     case GET = "GET"
     case POST = "POST"
-    
+    case Download = "DOWNLOAD"
+    case Delete
 }
 
 

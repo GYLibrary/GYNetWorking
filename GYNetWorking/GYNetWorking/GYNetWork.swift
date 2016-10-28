@@ -99,6 +99,8 @@ public class GYNetWork{
             newURl += "?" + GYParameterEncoding.convertSimpleParams(params)
         case .POST:
             break
+        default:
+            break
         }
         print(newURl)
         print(GYParameterEncoding.convertParams(params))
@@ -134,6 +136,8 @@ public class GYNetWork{
         case .GET:
             newURl += "?" + params
         case .POST:
+            break
+        default:
             break
         }
         print(newURl)
