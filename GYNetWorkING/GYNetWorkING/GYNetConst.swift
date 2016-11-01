@@ -8,7 +8,7 @@
 
 import Foundation
 
-
+///好多天了
 /// 请求结果回调
 public typealias RequestCompletion = (_ data:Data?, _ response:URLResponse?,_ error: Error?) -> Void
 
