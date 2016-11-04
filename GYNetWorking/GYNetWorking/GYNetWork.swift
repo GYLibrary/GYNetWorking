@@ -63,6 +63,12 @@ public class GYNetWork{
         
     }
     
+    
+    /// 网络请求（带返回结果）
+    ///
+    /// - parameter method:   GET、post
+    /// - parameter url:      url description
+    /// - parameter callback: callback description
     open  class func request(method: String, url: String,callback: @escaping (_ data:Data?,_ response:URLResponse?,_ error: Error?) -> Void) {
         
         let session = URLSession.shared
