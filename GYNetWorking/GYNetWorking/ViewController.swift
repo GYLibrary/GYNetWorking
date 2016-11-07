@@ -117,7 +117,8 @@ class ViewController: UIViewController {
 
             //https://api.github.com/repos/GYLibrary/appApi/contents/export.json
             //将github作为自己的服务器
-            requestForJSONResult(GYNetWorkMethod.GET, url: "https://api.github.com/repos/airfight/api/contents/contact/config/export.json", params: nil) { (result) in
+            //https://api.github.com/repos/ozner-app-ios-org/updateApi/contents/{}
+            requestForJSONResult(GYNetWorkMethod.GET, url: "https://api.github.com/repos/ozner-app-ios-org/updateApi/contents/InesUpdateFile/inse.json", params: nil) { (result) in
                 
             switch result! {
             case .sucess(let value):
