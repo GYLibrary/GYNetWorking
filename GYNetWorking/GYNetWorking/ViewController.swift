@@ -113,8 +113,10 @@ class ViewController: UIViewController {
 
         }
         #endif
-        
-        requestForJSONResult(GYNetWorkMethod.GET, url: "http://m.geeboo.com/selection/cGetArticleList.g", params: ["phone":"XXXX","password":"666666"]) { (result) in
+        #if true
+
+            //https://api.github.com/repos/GYLibrary/appApi/contents/export.json
+            requestForJSONResult(GYNetWorkMethod.POST, url: "https://api.github.com/repos/airfight/api/contents/contact/config/export.json", params: nil) { (result) in
 
             switch result! {
             case .sucess(let value):
@@ -123,6 +125,8 @@ class ViewController: UIViewController {
                 print(error)
             }
         }
+            #endif
+ 
         
         print("猪猪最帅")
     }
