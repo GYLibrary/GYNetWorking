@@ -116,11 +116,24 @@ class ViewController: UIViewController {
         #if true
 
             //https://api.github.com/repos/GYLibrary/appApi/contents/export.json
-            requestForJSONResult(GYNetWorkMethod.POST, url: "https://api.github.com/repos/airfight/api/contents/contact/config/export.json", params: nil) { (result) in
-
+            //将github作为自己的服务器
+            requestForJSONResult(GYNetWorkMethod.GET, url: "https://api.github.com/repos/airfight/api/contents/contact/config/export.json", params: nil) { (result) in
+                
             switch result! {
             case .sucess(let value):
                 print(value)
+                let str = ((value as! [String:Any])["content"] as! String).replacingOccurrences(of: "\n", with: "")
+                //解码
+                let edcodedData = Data(base64Encoded: str, options: Data.Base64DecodingOptions.ignoreUnknownCharacters)
+                let str2 = String(data: edcodedData!, encoding: String.Encoding.utf8)
+                
+                let data = str2?.data(using: String.Encoding.utf8)
+                
+                let dic = try? JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.allowFragments) as? [String:AnyObject]
+                
+                print(dic!!["result"]!["version"]! as! String)
+
+                
             case .failure(let error):
                 print(error)
             }
