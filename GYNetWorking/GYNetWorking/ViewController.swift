@@ -16,6 +16,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
+    //试一下
     @IBAction func startAction(_ sender: AnyObject) {
         
 //        GYNetWork.request()
