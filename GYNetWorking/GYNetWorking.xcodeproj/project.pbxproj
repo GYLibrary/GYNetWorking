@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B73A09ED1DC1A8F800ADD1F1 /* GYResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73A09EC1DC1A8F800ADD1F1 /* GYResult.swift */; };
 		B75214961DC0494600AB863F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75214951DC0494600AB863F /* AppDelegate.swift */; };
 		B75214981DC0494600AB863F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75214971DC0494600AB863F /* ViewController.swift */; };
 		B752149B1DC0494600AB863F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B75214991DC0494600AB863F /* Main.storyboard */; };
@@ -15,13 +14,14 @@
 		B75214A01DC0494600AB863F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B752149E1DC0494600AB863F /* LaunchScreen.storyboard */; };
 		B75214AB1DC0494600AB863F /* GYNetWorkINGTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75214AA1DC0494600AB863F /* GYNetWorkINGTests.swift */; };
 		B75214B61DC0494600AB863F /* GYNetWorkINGUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75214B51DC0494600AB863F /* GYNetWorkINGUITests.swift */; };
-		B75214C41DC049FF00AB863F /* GYNetWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75214C31DC049FF00AB863F /* GYNetWork.swift */; };
-		B75214C71DC079B600AB863F /* GYParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75214C61DC079B600AB863F /* GYParameterEncoding.swift */; };
-		B7E1589A1DC095510059D230 /* GYNetWorkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E158991DC095510059D230 /* GYNetWorkManager.swift */; };
-		B7E1589C1DC09DA70059D230 /* NetWorkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E1589B1DC09DA70059D230 /* NetWorkManager.swift */; };
-		B7F423731DC1C00200E2D4E1 /* GYRespons.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F423721DC1C00200E2D4E1 /* GYRespons.swift */; };
-		B7F423801DC1CC5700E2D4E1 /* GYError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F4237F1DC1CC5700E2D4E1 /* GYError.swift */; };
-		B7F423821DC1E5EF00E2D4E1 /* GYNetConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F423811DC1E5EF00E2D4E1 /* GYNetConst.swift */; };
+		B7F67EDB1E496F2E0052699E /* GYError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F67ED31E496F2E0052699E /* GYError.swift */; };
+		B7F67EDC1E496F2E0052699E /* GYNetConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F67ED41E496F2E0052699E /* GYNetConst.swift */; };
+		B7F67EDD1E496F2E0052699E /* GYNetWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F67ED51E496F2E0052699E /* GYNetWork.swift */; };
+		B7F67EDE1E496F2E0052699E /* GYNetWorkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F67ED61E496F2E0052699E /* GYNetWorkManager.swift */; };
+		B7F67EDF1E496F2E0052699E /* GYParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F67ED71E496F2E0052699E /* GYParameterEncoding.swift */; };
+		B7F67EE01E496F2E0052699E /* GYRespons.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F67ED81E496F2E0052699E /* GYRespons.swift */; };
+		B7F67EE11E496F2E0052699E /* GYResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F67ED91E496F2E0052699E /* GYResult.swift */; };
+		B7F67EE21E496F2E0052699E /* NetWorkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F67EDA1E496F2E0052699E /* NetWorkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +42,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B73A09EC1DC1A8F800ADD1F1 /* GYResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GYResult.swift; path = ../GYResult.swift; sourceTree = "<group>"; };
 		B75214921DC0494600AB863F /* GYNetWorkING.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GYNetWorkING.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B75214951DC0494600AB863F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B75214971DC0494600AB863F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,13 +55,14 @@
 		B75214B11DC0494600AB863F /* GYNetWorkINGUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GYNetWorkINGUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B75214B51DC0494600AB863F /* GYNetWorkINGUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GYNetWorkINGUITests.swift; sourceTree = "<group>"; };
 		B75214B71DC0494600AB863F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B75214C31DC049FF00AB863F /* GYNetWork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GYNetWork.swift; path = ../GYNetWork.swift; sourceTree = "<group>"; };
-		B75214C61DC079B600AB863F /* GYParameterEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GYParameterEncoding.swift; path = ../GYParameterEncoding.swift; sourceTree = "<group>"; };
-		B7E158991DC095510059D230 /* GYNetWorkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GYNetWorkManager.swift; path = ../GYNetWorkManager.swift; sourceTree = "<group>"; };
-		B7E1589B1DC09DA70059D230 /* NetWorkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetWorkManager.swift; path = GYNetWorkING/NetWorkManager.swift; sourceTree = SOURCE_ROOT; };
-		B7F423721DC1C00200E2D4E1 /* GYRespons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GYRespons.swift; path = ../GYRespons.swift; sourceTree = "<group>"; };
-		B7F4237F1DC1CC5700E2D4E1 /* GYError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GYError.swift; path = ../GYError.swift; sourceTree = "<group>"; };
-		B7F423811DC1E5EF00E2D4E1 /* GYNetConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GYNetConst.swift; path = ../GYNetConst.swift; sourceTree = "<group>"; };
+		B7F67ED31E496F2E0052699E /* GYError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYError.swift; sourceTree = "<group>"; };
+		B7F67ED41E496F2E0052699E /* GYNetConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYNetConst.swift; sourceTree = "<group>"; };
+		B7F67ED51E496F2E0052699E /* GYNetWork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYNetWork.swift; sourceTree = "<group>"; };
+		B7F67ED61E496F2E0052699E /* GYNetWorkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYNetWorkManager.swift; sourceTree = "<group>"; };
+		B7F67ED71E496F2E0052699E /* GYParameterEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYParameterEncoding.swift; sourceTree = "<group>"; };
+		B7F67ED81E496F2E0052699E /* GYRespons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYRespons.swift; sourceTree = "<group>"; };
+		B7F67ED91E496F2E0052699E /* GYResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYResult.swift; sourceTree = "<group>"; };
+		B7F67EDA1E496F2E0052699E /* NetWorkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetWorkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,14 +145,14 @@
 		B7F67ED21E4964A40052699E /* NetWork */ = {
 			isa = PBXGroup;
 			children = (
-				B7E1589B1DC09DA70059D230 /* NetWorkManager.swift */,
-				B7E158991DC095510059D230 /* GYNetWorkManager.swift */,
-				B75214C31DC049FF00AB863F /* GYNetWork.swift */,
-				B7F423721DC1C00200E2D4E1 /* GYRespons.swift */,
-				B75214C61DC079B600AB863F /* GYParameterEncoding.swift */,
-				B73A09EC1DC1A8F800ADD1F1 /* GYResult.swift */,
-				B7F423811DC1E5EF00E2D4E1 /* GYNetConst.swift */,
-				B7F4237F1DC1CC5700E2D4E1 /* GYError.swift */,
+				B7F67ED31E496F2E0052699E /* GYError.swift */,
+				B7F67ED41E496F2E0052699E /* GYNetConst.swift */,
+				B7F67ED51E496F2E0052699E /* GYNetWork.swift */,
+				B7F67ED61E496F2E0052699E /* GYNetWorkManager.swift */,
+				B7F67ED71E496F2E0052699E /* GYParameterEncoding.swift */,
+				B7F67ED81E496F2E0052699E /* GYRespons.swift */,
+				B7F67ED91E496F2E0052699E /* GYResult.swift */,
+				B7F67EDA1E496F2E0052699E /* NetWorkManager.swift */,
 			);
 			path = NetWork;
 			sourceTree = "<group>";
@@ -294,16 +294,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B75214C71DC079B600AB863F /* GYParameterEncoding.swift in Sources */,
-				B75214C41DC049FF00AB863F /* GYNetWork.swift in Sources */,
-				B7E1589C1DC09DA70059D230 /* NetWorkManager.swift in Sources */,
-				B7F423821DC1E5EF00E2D4E1 /* GYNetConst.swift in Sources */,
+				B7F67EE21E496F2E0052699E /* NetWorkManager.swift in Sources */,
+				B7F67EDB1E496F2E0052699E /* GYError.swift in Sources */,
+				B7F67EDF1E496F2E0052699E /* GYParameterEncoding.swift in Sources */,
+				B7F67EDC1E496F2E0052699E /* GYNetConst.swift in Sources */,
+				B7F67EDE1E496F2E0052699E /* GYNetWorkManager.swift in Sources */,
+				B7F67EE01E496F2E0052699E /* GYRespons.swift in Sources */,
 				B75214981DC0494600AB863F /* ViewController.swift in Sources */,
-				B7F423731DC1C00200E2D4E1 /* GYRespons.swift in Sources */,
-				B73A09ED1DC1A8F800ADD1F1 /* GYResult.swift in Sources */,
-				B7F423801DC1CC5700E2D4E1 /* GYError.swift in Sources */,
+				B7F67EDD1E496F2E0052699E /* GYNetWork.swift in Sources */,
 				B75214961DC0494600AB863F /* AppDelegate.swift in Sources */,
-				B7E1589A1DC095510059D230 /* GYNetWorkManager.swift in Sources */,
+				B7F67EE11E496F2E0052699E /* GYResult.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
