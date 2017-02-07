@@ -42,17 +42,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B75214921DC0494600AB863F /* GYNetWorkING.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GYNetWorkING.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B75214921DC0494600AB863F /* GYNetWorking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GYNetWorking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B75214951DC0494600AB863F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B75214971DC0494600AB863F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B752149A1DC0494600AB863F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B752149C1DC0494600AB863F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B752149F1DC0494600AB863F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B75214A11DC0494600AB863F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B75214A61DC0494600AB863F /* GYNetWorkINGTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GYNetWorkINGTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B75214A61DC0494600AB863F /* GYNetWorkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GYNetWorkingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B75214AA1DC0494600AB863F /* GYNetWorkINGTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GYNetWorkINGTests.swift; sourceTree = "<group>"; };
 		B75214AC1DC0494600AB863F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B75214B11DC0494600AB863F /* GYNetWorkINGUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GYNetWorkINGUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B75214B11DC0494600AB863F /* GYNetWorkingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GYNetWorkingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B75214B51DC0494600AB863F /* GYNetWorkINGUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GYNetWorkINGUITests.swift; sourceTree = "<group>"; };
 		B75214B71DC0494600AB863F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B7F67ED31E496F2E0052699E /* GYError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYError.swift; sourceTree = "<group>"; };
@@ -93,9 +93,9 @@
 		B75214891DC0494600AB863F = {
 			isa = PBXGroup;
 			children = (
-				B75214941DC0494600AB863F /* GYNetWorkING */,
-				B75214A91DC0494600AB863F /* GYNetWorkINGTests */,
-				B75214B41DC0494600AB863F /* GYNetWorkINGUITests */,
+				B75214941DC0494600AB863F /* GYNetWorking */,
+				B75214A91DC0494600AB863F /* GYNetWorkingTests */,
+				B75214B41DC0494600AB863F /* GYNetWorkingUITests */,
 				B75214931DC0494600AB863F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -103,14 +103,14 @@
 		B75214931DC0494600AB863F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B75214921DC0494600AB863F /* GYNetWorkING.app */,
-				B75214A61DC0494600AB863F /* GYNetWorkINGTests.xctest */,
-				B75214B11DC0494600AB863F /* GYNetWorkINGUITests.xctest */,
+				B75214921DC0494600AB863F /* GYNetWorking.app */,
+				B75214A61DC0494600AB863F /* GYNetWorkingTests.xctest */,
+				B75214B11DC0494600AB863F /* GYNetWorkingUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B75214941DC0494600AB863F /* GYNetWorkING */ = {
+		B75214941DC0494600AB863F /* GYNetWorking */ = {
 			isa = PBXGroup;
 			children = (
 				B7F67ED21E4964A40052699E /* NetWork */,
@@ -121,24 +121,27 @@
 				B752149E1DC0494600AB863F /* LaunchScreen.storyboard */,
 				B75214A11DC0494600AB863F /* Info.plist */,
 			);
+			name = GYNetWorking;
 			path = GYNetWorkING;
 			sourceTree = "<group>";
 		};
-		B75214A91DC0494600AB863F /* GYNetWorkINGTests */ = {
+		B75214A91DC0494600AB863F /* GYNetWorkingTests */ = {
 			isa = PBXGroup;
 			children = (
 				B75214AA1DC0494600AB863F /* GYNetWorkINGTests.swift */,
 				B75214AC1DC0494600AB863F /* Info.plist */,
 			);
+			name = GYNetWorkingTests;
 			path = GYNetWorkINGTests;
 			sourceTree = "<group>";
 		};
-		B75214B41DC0494600AB863F /* GYNetWorkINGUITests */ = {
+		B75214B41DC0494600AB863F /* GYNetWorkingUITests */ = {
 			isa = PBXGroup;
 			children = (
 				B75214B51DC0494600AB863F /* GYNetWorkINGUITests.swift */,
 				B75214B71DC0494600AB863F /* Info.plist */,
 			);
+			name = GYNetWorkingUITests;
 			path = GYNetWorkINGUITests;
 			sourceTree = "<group>";
 		};
@@ -160,9 +163,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B75214911DC0494600AB863F /* GYNetWorkING */ = {
+		B75214911DC0494600AB863F /* GYNetWorking */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B75214BA1DC0494600AB863F /* Build configuration list for PBXNativeTarget "GYNetWorkING" */;
+			buildConfigurationList = B75214BA1DC0494600AB863F /* Build configuration list for PBXNativeTarget "GYNetWorking" */;
 			buildPhases = (
 				B752148E1DC0494600AB863F /* Sources */,
 				B752148F1DC0494600AB863F /* Frameworks */,
@@ -172,14 +175,14 @@
 			);
 			dependencies = (
 			);
-			name = GYNetWorkING;
+			name = GYNetWorking;
 			productName = GYNetWorkING;
-			productReference = B75214921DC0494600AB863F /* GYNetWorkING.app */;
+			productReference = B75214921DC0494600AB863F /* GYNetWorking.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B75214A51DC0494600AB863F /* GYNetWorkINGTests */ = {
+		B75214A51DC0494600AB863F /* GYNetWorkingTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B75214BD1DC0494600AB863F /* Build configuration list for PBXNativeTarget "GYNetWorkINGTests" */;
+			buildConfigurationList = B75214BD1DC0494600AB863F /* Build configuration list for PBXNativeTarget "GYNetWorkingTests" */;
 			buildPhases = (
 				B75214A21DC0494600AB863F /* Sources */,
 				B75214A31DC0494600AB863F /* Frameworks */,
@@ -190,14 +193,14 @@
 			dependencies = (
 				B75214A81DC0494600AB863F /* PBXTargetDependency */,
 			);
-			name = GYNetWorkINGTests;
+			name = GYNetWorkingTests;
 			productName = GYNetWorkINGTests;
-			productReference = B75214A61DC0494600AB863F /* GYNetWorkINGTests.xctest */;
+			productReference = B75214A61DC0494600AB863F /* GYNetWorkingTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		B75214B01DC0494600AB863F /* GYNetWorkINGUITests */ = {
+		B75214B01DC0494600AB863F /* GYNetWorkingUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B75214C01DC0494600AB863F /* Build configuration list for PBXNativeTarget "GYNetWorkINGUITests" */;
+			buildConfigurationList = B75214C01DC0494600AB863F /* Build configuration list for PBXNativeTarget "GYNetWorkingUITests" */;
 			buildPhases = (
 				B75214AD1DC0494600AB863F /* Sources */,
 				B75214AE1DC0494600AB863F /* Frameworks */,
@@ -208,9 +211,9 @@
 			dependencies = (
 				B75214B31DC0494600AB863F /* PBXTargetDependency */,
 			);
-			name = GYNetWorkINGUITests;
+			name = GYNetWorkingUITests;
 			productName = GYNetWorkINGUITests;
-			productReference = B75214B11DC0494600AB863F /* GYNetWorkINGUITests.xctest */;
+			productReference = B75214B11DC0494600AB863F /* GYNetWorkingUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -255,9 +258,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B75214911DC0494600AB863F /* GYNetWorkING */,
-				B75214A51DC0494600AB863F /* GYNetWorkINGTests */,
-				B75214B01DC0494600AB863F /* GYNetWorkINGUITests */,
+				B75214911DC0494600AB863F /* GYNetWorking */,
+				B75214A51DC0494600AB863F /* GYNetWorkingTests */,
+				B75214B01DC0494600AB863F /* GYNetWorkingUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -328,12 +331,12 @@
 /* Begin PBXTargetDependency section */
 		B75214A81DC0494600AB863F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B75214911DC0494600AB863F /* GYNetWorkING */;
+			target = B75214911DC0494600AB863F /* GYNetWorking */;
 			targetProxy = B75214A71DC0494600AB863F /* PBXContainerItemProxy */;
 		};
 		B75214B31DC0494600AB863F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B75214911DC0494600AB863F /* GYNetWorkING */;
+			target = B75214911DC0494600AB863F /* GYNetWorking */;
 			targetProxy = B75214B21DC0494600AB863F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -547,7 +550,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B75214BA1DC0494600AB863F /* Build configuration list for PBXNativeTarget "GYNetWorkING" */ = {
+		B75214BA1DC0494600AB863F /* Build configuration list for PBXNativeTarget "GYNetWorking" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B75214BB1DC0494600AB863F /* Debug */,
@@ -556,7 +559,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B75214BD1DC0494600AB863F /* Build configuration list for PBXNativeTarget "GYNetWorkINGTests" */ = {
+		B75214BD1DC0494600AB863F /* Build configuration list for PBXNativeTarget "GYNetWorkingTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B75214BE1DC0494600AB863F /* Debug */,
@@ -565,7 +568,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B75214C01DC0494600AB863F /* Build configuration list for PBXNativeTarget "GYNetWorkINGUITests" */ = {
+		B75214C01DC0494600AB863F /* Build configuration list for PBXNativeTarget "GYNetWorkingUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B75214C11DC0494600AB863F /* Debug */,
