@@ -21,7 +21,7 @@ class GYNetWorkManager {
     var task: URLSessionDataTask!
     
     /// 服务器请求超时时间设置
-    var timeOut: TimeInterval = 10
+    var timeOut: TimeInterval = 20
     
     init(url:String!, method: GYNetWorkMethod,params: [String: Any]?,callBack:@escaping RequestCompletion)
     {
