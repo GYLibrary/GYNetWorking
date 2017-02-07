@@ -42,7 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B73A09EC1DC1A8F800ADD1F1 /* GYResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYResult.swift; sourceTree = "<group>"; };
+		B73A09EC1DC1A8F800ADD1F1 /* GYResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GYResult.swift; path = ../GYResult.swift; sourceTree = "<group>"; };
 		B75214921DC0494600AB863F /* GYNetWorkING.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GYNetWorkING.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B75214951DC0494600AB863F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B75214971DC0494600AB863F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,13 +56,13 @@
 		B75214B11DC0494600AB863F /* GYNetWorkINGUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GYNetWorkINGUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B75214B51DC0494600AB863F /* GYNetWorkINGUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GYNetWorkINGUITests.swift; sourceTree = "<group>"; };
 		B75214B71DC0494600AB863F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B75214C31DC049FF00AB863F /* GYNetWork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYNetWork.swift; sourceTree = "<group>"; };
-		B75214C61DC079B600AB863F /* GYParameterEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYParameterEncoding.swift; sourceTree = "<group>"; };
-		B7E158991DC095510059D230 /* GYNetWorkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYNetWorkManager.swift; sourceTree = "<group>"; };
-		B7E1589B1DC09DA70059D230 /* NetWorkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetWorkManager.swift; sourceTree = "<group>"; };
-		B7F423721DC1C00200E2D4E1 /* GYRespons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYRespons.swift; sourceTree = "<group>"; };
-		B7F4237F1DC1CC5700E2D4E1 /* GYError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYError.swift; sourceTree = "<group>"; };
-		B7F423811DC1E5EF00E2D4E1 /* GYNetConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYNetConst.swift; sourceTree = "<group>"; };
+		B75214C31DC049FF00AB863F /* GYNetWork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GYNetWork.swift; path = ../GYNetWork.swift; sourceTree = "<group>"; };
+		B75214C61DC079B600AB863F /* GYParameterEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GYParameterEncoding.swift; path = ../GYParameterEncoding.swift; sourceTree = "<group>"; };
+		B7E158991DC095510059D230 /* GYNetWorkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GYNetWorkManager.swift; path = ../GYNetWorkManager.swift; sourceTree = "<group>"; };
+		B7E1589B1DC09DA70059D230 /* NetWorkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetWorkManager.swift; path = GYNetWorkING/NetWorkManager.swift; sourceTree = SOURCE_ROOT; };
+		B7F423721DC1C00200E2D4E1 /* GYRespons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GYRespons.swift; path = ../GYRespons.swift; sourceTree = "<group>"; };
+		B7F4237F1DC1CC5700E2D4E1 /* GYError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GYError.swift; path = ../GYError.swift; sourceTree = "<group>"; };
+		B7F423811DC1E5EF00E2D4E1 /* GYNetConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GYNetConst.swift; path = ../GYNetConst.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,16 +113,9 @@
 		B75214941DC0494600AB863F /* GYNetWorkING */ = {
 			isa = PBXGroup;
 			children = (
+				B7F67ED21E4964A40052699E /* NetWork */,
 				B75214951DC0494600AB863F /* AppDelegate.swift */,
 				B75214971DC0494600AB863F /* ViewController.swift */,
-				B7E1589B1DC09DA70059D230 /* NetWorkManager.swift */,
-				B7E158991DC095510059D230 /* GYNetWorkManager.swift */,
-				B75214C31DC049FF00AB863F /* GYNetWork.swift */,
-				B7F423721DC1C00200E2D4E1 /* GYRespons.swift */,
-				B75214C61DC079B600AB863F /* GYParameterEncoding.swift */,
-				B73A09EC1DC1A8F800ADD1F1 /* GYResult.swift */,
-				B7F423811DC1E5EF00E2D4E1 /* GYNetConst.swift */,
-				B7F4237F1DC1CC5700E2D4E1 /* GYError.swift */,
 				B75214991DC0494600AB863F /* Main.storyboard */,
 				B752149C1DC0494600AB863F /* Assets.xcassets */,
 				B752149E1DC0494600AB863F /* LaunchScreen.storyboard */,
@@ -147,6 +140,21 @@
 				B75214B71DC0494600AB863F /* Info.plist */,
 			);
 			path = GYNetWorkINGUITests;
+			sourceTree = "<group>";
+		};
+		B7F67ED21E4964A40052699E /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				B7E1589B1DC09DA70059D230 /* NetWorkManager.swift */,
+				B7E158991DC095510059D230 /* GYNetWorkManager.swift */,
+				B75214C31DC049FF00AB863F /* GYNetWork.swift */,
+				B7F423721DC1C00200E2D4E1 /* GYRespons.swift */,
+				B75214C61DC079B600AB863F /* GYParameterEncoding.swift */,
+				B73A09EC1DC1A8F800ADD1F1 /* GYResult.swift */,
+				B7F423811DC1E5EF00E2D4E1 /* GYNetConst.swift */,
+				B7F4237F1DC1CC5700E2D4E1 /* GYError.swift */,
+			);
+			path = NetWork;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
