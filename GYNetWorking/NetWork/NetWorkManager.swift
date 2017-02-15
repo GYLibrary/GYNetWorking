@@ -36,7 +36,8 @@ public func requestForJSONResult(_ method: GYNetWorkMethod,url: String!,params:[
     let manager = GYNetWorkManager(url: url, method: method, params: params, resultBack: resultBack)
     //
     manager.resuluFire()
-    manager.cancleRequest()
+    //取消请求
+//    manager.cancleRequest()
     
 }
 

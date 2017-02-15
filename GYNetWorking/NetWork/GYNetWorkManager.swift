@@ -80,6 +80,7 @@ class GYNetWorkManager {
             }
 
         })
+        
         task.resume()
         
     }
@@ -139,5 +140,6 @@ class GYNetWorkManager {
     }
     
 }
+
 
 private let emptyDataStatusCodes: Set<Int> = [204, 205]
