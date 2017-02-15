@@ -29,7 +29,7 @@ public class GYNetWork{
             print("waif for 5 seconds!")
             sleep(5)
             let string = NSString(data: data!, encoding: String.Encoding.utf8.rawValue)
-            print(string)
+            Print(string)
             
         }
         

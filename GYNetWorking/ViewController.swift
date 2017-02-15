@@ -122,7 +122,7 @@ class ViewController: UIViewController {
             requestForJSONResult(GYNetWorkMethod.GET, url: "https://api.github.com/repos/ozner-app-ios-org/updateApi/contents/InesUpdateFile/inse.json", params: nil) { (result) in
             switch result! {
             case .sucess(let value):
-                print(value)
+                Print(value)
                 let str = ((value as! [String:Any])["content"] as! String).replacingOccurrences(of: "\n", with: "")
                 //解码
                 let edcodedData = Data(base64Encoded: str, options: Data.Base64DecodingOptions.ignoreUnknownCharacters)
@@ -132,11 +132,11 @@ class ViewController: UIViewController {
                 
                 let dic = try? JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.allowFragments) as? [String:AnyObject]
                 
-                print(dic!!["result"]!["version"]! as! String)
+                Print(dic!!["result"]!["version"]! as! String)
 
                 
             case .failure(let error):
-                print(error)
+                Print(error)
             }
         }
             #endif

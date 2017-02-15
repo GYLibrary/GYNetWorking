@@ -51,6 +51,7 @@ class GYNetWorkManager {
         if self.method == .GET && self.params != nil {
             self.request = URLRequest.init(url: URL(string: self.url + "?" + GYParameterEncoding.convertSimpleParams(self.params))!)
             self.request.timeoutInterval = timeOut
+            
         }
         request.httpMethod = self.method.rawValue
         
@@ -72,7 +73,7 @@ class GYNetWorkManager {
             
             if isBool {
                 let reslut: GYResult<Any> = self.serializaResponseJSON(data: data, response: response as! HTTPURLResponse?, error: error)
-                print(reslut)
+                Print(reslut)
                 self.resultBack!(reslut)
             } else {
                self.callBack!(data, response, error)
@@ -127,6 +128,14 @@ class GYNetWorkManager {
         } catch {
             return .failure(GYError.responseSerializationFailed(reason: .jsonSerializationFailed(error: error)))
         }
+    }
+    
+    
+    
+    /// 取消网络请求
+     func cancleRequest() {
+        
+        task.cancel()
     }
     
 }
