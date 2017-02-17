@@ -114,7 +114,7 @@ class ViewController: UIViewController {
 
         }
         #endif
-        #if true
+        #if false
 
             //https://api.github.com/repos/GYLibrary/appApi/contents/export.json
             //将github作为自己的服务器
@@ -140,6 +140,18 @@ class ViewController: UIViewController {
             }
         }
             #endif
+        
+        requestForJSONResult(GYNetWorkMethod.POST, url: "https://app.kujiang.com/v1/book/read_new", params: ["auth_code":"a3a7e8cfef43441c3983f9e22865607f","book":"25129","chapter":"532841","is_vip":"1"]) { (result) in
+            switch result! {
+            case .sucess(let value):
+                let jsonDic = value as! [String:AnyObject]
+                Print(jsonDic["body"])
+                
+            case .failure(let error):
+                Print(error)
+                
+            }
+        }
  
         
         print("猪猪最帅")
