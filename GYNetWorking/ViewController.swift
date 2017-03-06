@@ -152,7 +152,10 @@ class ViewController: UIViewController {
                 
             }
         }
- 
+        
+        downLoad("http://dldir1.qq.com/qqfile/QQforMac/QQ_V4.2.4.dmg", params: nil) { (_, _, _) in
+            
+        }
         
         print("猪猪最帅")
     }

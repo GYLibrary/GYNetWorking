@@ -17,6 +17,7 @@ import Foundation
 /// - parameter url:      url description
 /// - parameter params:   params description
 /// - parameter callBack: callBack description
+@discardableResult
 public func request(_ method: GYNetWorkMethod,url: String!,params:[String: Any]?,callBack:@escaping RequestCompletion) {
     
     let manager = GYNetWorkManager(url: url, method: method, params: params, callBack: callBack)
@@ -31,6 +32,7 @@ public func request(_ method: GYNetWorkMethod,url: String!,params:[String: Any]?
 /// - parameter url:        url description
 /// - parameter params:     params description
 /// - parameter resultBack: resultBack description
+@discardableResult
 public func requestForJSONResult(_ method: GYNetWorkMethod,url: String!,params:[String: Any]?,resultBack:@escaping SuccessAndFailureResult) {
     
     let manager = GYNetWorkManager(url: url, method: method, params: params, resultBack: resultBack)
@@ -49,6 +51,12 @@ public func requestForJSONResult(_ method: GYNetWorkMethod,url: String!,params:[
 public func request(_ url: String!,params:[String: Any],callBack: @escaping RequestCompletion){
     let manager = GYNetWorkManager(url: url, method: .GET, params: params, callBack: callBack)
     manager.startFire()
+    
+}
+
+public func downLoad(_ url: String!,params:[String: Any]?,callBack: @escaping RequestCompletion){
+    let manager = GYNetWorkManager(url: url, method: .GET, params: params, callBack: callBack)
+    manager.downLoadFire()
     
 }
 
