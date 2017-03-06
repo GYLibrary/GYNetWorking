@@ -18,7 +18,7 @@ class GYNetWorkManager {
     let resultBack: SuccessAndFailureResult?
     var request:URLRequest
     let session = URLSession.shared
-    var task: URLSessionTask!
+    var task: URLSessionDataTask!
     
     /// 服务器请求超时时间设置
     var timeOut: TimeInterval = 20
@@ -68,7 +68,7 @@ class GYNetWorkManager {
     }
     
     func fireTask(isBool:Bool) {
-    
+        
         task = session.dataTask(with: self.request, completionHandler: { (data, response, error) in
             
             if isBool {
@@ -79,22 +79,6 @@ class GYNetWorkManager {
                self.callBack!(data, response, error)
             }
 
-        })
-
-        task.resume()
-        
-        
-    }
-    
-    func downLoadTask() {
-        
-        task = session.downloadTask(with: self.request, completionHandler: { (data, response, error) in
-            
-//            if !(error != nil) {
-            
-            
-//            }
-            
         })
         
         task.resume()
@@ -111,21 +95,12 @@ class GYNetWorkManager {
         
     }
     
-    /// 已解析的结果
     func resuluFire() {
         buildRequest()
         buildBody()
         fireTask(isBool: true)
     }
     
-    
-    /// 下载请求
-    func downLoadFire() {
-        
-        buildRequest()
-        buildBody()
-        downLoadTask()
-    }
     
     /// 返回成功和失败的结果
     ///

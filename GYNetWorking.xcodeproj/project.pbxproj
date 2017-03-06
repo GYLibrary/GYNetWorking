@@ -15,8 +15,6 @@
 		B75214AB1DC0494600AB863F /* GYNetWorkINGTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75214AA1DC0494600AB863F /* GYNetWorkINGTests.swift */; };
 		B75214B61DC0494600AB863F /* GYNetWorkINGUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75214B51DC0494600AB863F /* GYNetWorkINGUITests.swift */; };
 		B7D796491E6D4F5F00BA498C /* GYDownLoadPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D796481E6D4F5F00BA498C /* GYDownLoadPath.swift */; };
-		B7D7968E1E6D89D300BA498C /* DownLoadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D7968D1E6D89D300BA498C /* DownLoadManager.swift */; };
-		B7D796901E6D8A2C00BA498C /* DownLoadRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D7968F1E6D8A2C00BA498C /* DownLoadRequest.swift */; };
 		B7F67EDB1E496F2E0052699E /* GYError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F67ED31E496F2E0052699E /* GYError.swift */; };
 		B7F67EDC1E496F2E0052699E /* GYNetConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F67ED41E496F2E0052699E /* GYNetConst.swift */; };
 		B7F67EDD1E496F2E0052699E /* GYNetWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F67ED51E496F2E0052699E /* GYNetWork.swift */; };
@@ -59,8 +57,6 @@
 		B75214B51DC0494600AB863F /* GYNetWorkINGUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GYNetWorkINGUITests.swift; sourceTree = "<group>"; };
 		B75214B71DC0494600AB863F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B7D796481E6D4F5F00BA498C /* GYDownLoadPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYDownLoadPath.swift; sourceTree = "<group>"; };
-		B7D7968D1E6D89D300BA498C /* DownLoadManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownLoadManager.swift; sourceTree = "<group>"; };
-		B7D7968F1E6D8A2C00BA498C /* DownLoadRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownLoadRequest.swift; sourceTree = "<group>"; };
 		B7F67ED31E496F2E0052699E /* GYError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYError.swift; sourceTree = "<group>"; };
 		B7F67ED41E496F2E0052699E /* GYNetConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYNetConst.swift; sourceTree = "<group>"; };
 		B7F67ED51E496F2E0052699E /* GYNetWork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYNetWork.swift; sourceTree = "<group>"; };
@@ -155,9 +151,7 @@
 		B7D796471E6D4EF500BA498C /* DownLoad */ = {
 			isa = PBXGroup;
 			children = (
-				B7D7968D1E6D89D300BA498C /* DownLoadManager.swift */,
 				B7D796481E6D4F5F00BA498C /* GYDownLoadPath.swift */,
-				B7D7968F1E6D8A2C00BA498C /* DownLoadRequest.swift */,
 			);
 			name = DownLoad;
 			path = GYNetWorking/DownLoad;
@@ -318,12 +312,10 @@
 				B7F67EE21E496F2E0052699E /* NetWorkManager.swift in Sources */,
 				B7F67EDB1E496F2E0052699E /* GYError.swift in Sources */,
 				B7F67EDF1E496F2E0052699E /* GYParameterEncoding.swift in Sources */,
-				B7D7968E1E6D89D300BA498C /* DownLoadManager.swift in Sources */,
 				B7F67EDC1E496F2E0052699E /* GYNetConst.swift in Sources */,
 				B7F67EDE1E496F2E0052699E /* GYNetWorkManager.swift in Sources */,
 				B7F67EE01E496F2E0052699E /* GYRespons.swift in Sources */,
 				B75214981DC0494600AB863F /* ViewController.swift in Sources */,
-				B7D796901E6D8A2C00BA498C /* DownLoadRequest.swift in Sources */,
 				B7F67EDD1E496F2E0052699E /* GYNetWork.swift in Sources */,
 				B7D796491E6D4F5F00BA498C /* GYDownLoadPath.swift in Sources */,
 				B75214961DC0494600AB863F /* AppDelegate.swift in Sources */,
