@@ -90,7 +90,11 @@ open class DownloadManger {
         ]
     }()
 
+    open func download(_ url: URL,METHOD: GYNetWorkMethod = .GET) -> DownLoadRequest{
         
+        return DownLoadRequest(url)
+        
+    }
         
     
     
@@ -105,6 +109,11 @@ open class DownloadManger {
         self.session = URLSession(configuration: configuration, delegate: delegate, delegateQueue: nil)
         
         
+    }
+    
+    
+    deinit {
+         session.invalidateAndCancel()
     }
     
 }
