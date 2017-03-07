@@ -28,6 +28,13 @@ open class GYSessionDelegate: NSObject {
 
 extension GYSessionDelegate: URLSessionDataDelegate {
     
+    
+    /// Description
+    ///
+    /// - Parameters:
+    ///   - session: session description
+    ///   - dataTask: dataTask description
+    ///   - downloadTask: downloadTask description
     open func urlSession(_ session: URLSession, dataTask: URLSessionDataTask, didBecome downloadTask: URLSessionDownloadTask) {
         
        print("didBecome")
