@@ -19,6 +19,14 @@ class DownLoadRequest {
     
     public typealias ProgressHandler = (Progress) -> Void
     
+    init(_ url:URL) {
+        
+        _ = URLSession().downloadTask(with: url)
+        
+        
+        
+    }
+    
 //    @discardableResult
 //    open func downloadProgress(queue: DispatchQueue = DispatchQueue.main,closure: @escaping ProgressHandler) -> self {
 //        

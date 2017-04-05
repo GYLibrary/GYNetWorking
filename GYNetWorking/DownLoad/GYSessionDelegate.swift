@@ -86,7 +86,8 @@ extension GYSessionDelegate: URLSessionDataDelegate {
     ///   - response: response description
     ///   - completionHandler: completionHandler description
     open func urlSession(_ session: URLSession, dataTask: URLSessionDataTask, didReceive response: URLResponse, completionHandler: @escaping (URLSession.ResponseDisposition) -> Void) {
-        
+     
+        print("didReceive response")
     }
     
     open func urlSessionDidFinishEvents(forBackgroundURLSession session: URLSession) {
